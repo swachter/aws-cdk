@@ -40,7 +40,7 @@ jobs:
   sync-branch:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write workflows
     needs: [check-secret]
     steps:
       - name: Checkout using User Token (+ download lfs dependencies)
